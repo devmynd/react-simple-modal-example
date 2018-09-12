@@ -26,7 +26,7 @@ class App extends Component {
         <button className="button" onClick={this.openModal}>
           Open Modal
         </button>
-        {this.state.showModal && <SimpleModal onOutsideClick={this.closeModal}>
+        {this.state.showModal && <SimpleModal onOutsideClick={this.closeModal} onEscape={this.closeModal}>
           <h2>Inside the Modal!</h2>
           <button ref={button => button && button.focus()} className="button" onClick={this.closeModal}>
             Close Modal
