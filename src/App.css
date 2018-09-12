@@ -45,3 +45,8 @@
 .button:focus {
   outline: 0;
 }
+
+.spacer {
+  background-color: gray;
+  height: 100vh;
+}
